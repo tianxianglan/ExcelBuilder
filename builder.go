@@ -19,8 +19,9 @@ func (b *Builder) BuildExcel(list []interface{}) error {
 		t := reflect.TypeOf(obj)
 		v := reflect.ValueOf(obj)
 		for i := 0; i < t.NumField(); i++ {
-			fmt.Println(fmt.Sprintf("字段名称: %v, 字段值：%v", t.Field(i).Name, v.Field(i)))
+			fmt.Print(fmt.Sprintf("字段名称: %v, 字段值：%v", t.Field(i).Name, v.Field(i)))
 		}
+		fmt.Println()
 	}
 	return nil
 }
