@@ -1,4 +1,4 @@
-module ExcelBuilder
+module github.com/tianxianglan/ExcelBuilder
 
 go 1.16
 
